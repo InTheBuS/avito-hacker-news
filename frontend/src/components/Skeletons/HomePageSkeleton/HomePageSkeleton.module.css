@@ -1,0 +1,15 @@
+.skeletonStoryTitleContainer {
+  display: flex;
+  flex-direction: column;
+}
+.skeletonBodyContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.skeletonBodyOptionContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}

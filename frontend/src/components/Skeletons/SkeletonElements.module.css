@@ -1,0 +1,55 @@
+.skeleton {
+  background-color: #ddd;
+  border-radius: 12px;
+  animation: skeleton-loading 1s linear infinite alternate;
+  opacity: .7;
+
+}
+
+.skeleton.text {
+  height: 16px;
+}
+
+.skeleton.title {
+  height: 27px;
+  margin-bottom: 5px;
+}
+
+.skeleton.bigTitle {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.skeleton.large {
+  width: 100%;
+}
+
+.skeleton.medium {
+  width: 75%;
+}
+
+.skeleton.small {
+  width: 50%;
+}
+
+.skeleton.halfOfSmall {
+  width: 25%;
+}
+
+.skeleton.xUltraSmall {
+  width: 10%;
+}
+
+.skeleton.ultraSmall {
+  width: 5%;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  100% {
+    background-color: rgb(255, 102, 0);;
+  }
+}

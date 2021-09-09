@@ -1,0 +1,14 @@
+.skeletonWrapper {
+  max-width: 1300px;
+  margin-top: 5px;
+}
+.infoContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.info {
+  display: flex;
+  gap: 2px;
+}

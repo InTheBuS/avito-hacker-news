@@ -1,0 +1,13 @@
+.LinkToHome {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0000c6;
+  margin-top: 50px;
+  transition: color .2s;
+}
+.LinkToHome:hover {
+  color: orange;
+}
+.Title {
+  margin-bottom: 10px;
+}

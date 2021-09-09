@@ -1,0 +1,16 @@
+.HeaderContainer {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  margin: auto;
+  z-index: 999;
+}
+.Header {
+  max-width: 1400px;
+  margin: auto;
+  font-size: 50px;
+  padding: 5px 10px;
+  display: flex;
+}

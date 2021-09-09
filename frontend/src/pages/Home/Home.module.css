@@ -1,0 +1,67 @@
+.HomeWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.StoriesWrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+.reloadNewsButton {
+  z-index: 9999;
+  position: fixed;
+  margin-bottom: 90px;
+  height: 40px;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 8px;
+  background: white;
+  font-size: 1.5rem;
+  transition: .2s;
+  animation: appear 1s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.reloadNewsButton:hover {
+  background-color: black;
+  color: rgb(255, 102, 0);
+  cursor: pointer;
+}
+.reloadNewsButtonFixedBottom {
+  bottom: -80px;
+}
+/*.card {
+  width: 280px;
+  height: 200px;
+  margin: 15px;
+  overflow: hidden;
+}*/
+
+@keyframes loading {
+  to {
+    background-position: 615px 0, 0 0, 0 190px, 0 495px;
+  }
+}
+.card{
+  z-index: 200;
+  overflow: hidden;
+  width: 350px;
+  height: 250px;
+  background-size: 315px 250px, 315px 180px, 100px 100px, 225px 30px;
+  background: linear-gradient(0.25turn, transparent, #9b9b9b, transparent) no-repeat -315px 0, 0 0, 0px 190px, 50px 195px;
+  animation: loading 2s infinite;
+}
+

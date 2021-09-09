@@ -1,0 +1,15 @@
+.AccordionHeaderContainer {
+  margin: 5px;
+  padding: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.AccordionHeaderLeft {
+  cursor: pointer;
+}
+.AccordionHeaderRight {
+  font-size: 20px;
+}

@@ -1,0 +1,42 @@
+.news {
+  padding: 15px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  justify-self: center;
+  min-height: 250px;
+  background: white;
+  color: black;
+  box-sizing: border-box;
+  margin: 15px 0;
+  border-radius: 12px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.news:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.newsInformationContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.newsAuthorContainer {
+  max-width: 33%;
+}
+.newsRatingContainer {
+  max-width: 33%;
+}
+.newsPublishDateContainer {
+  max-width: 37%;
+}
+.newsPublishDate{
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
