@@ -120,7 +120,16 @@ describe('Testing Story sagas:', () => {
 		const resolve = [commentExample, commentExample];
 
 		const generator = checkForUpdateCommentsWorker(action);
+		
+		let firstPutOutput = generator.next().value
+		let expectedFirstPutOutput = put(
+			{
+				type: LOAD_STORY_DEEP_COMMENTS_TREE_SET_FETCHING,
+				isFetching: true,
+			});
 
+		expect(firstPutOutput).toEqual(expectedFirstPutOutput);
+		
 		let callOutput = generator.next().value;
 		let expectedCall = call(checkForUpdateStoryComments, action.id, action.hash, action.deepComments);
 
